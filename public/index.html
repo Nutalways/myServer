@@ -11,11 +11,13 @@
 		<thead>
 			<th class="warning">Title</th>
 			<th class="warning">Price</th>
+			<th class="warning">Amount</th>
 		</thead>
 		<tbody>
 			<tr ng-repeat="book in books">
 				<td class="active">{{book.title}}</td>
 				<td class="success">{{book.price | currency:'B'}}</td>
+				<td class="danger">{{book.amount}}</td>
 			</tr>
 		</tbody>
 	</table>
