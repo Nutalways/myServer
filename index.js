@@ -5,9 +5,9 @@ app.use(express.static(__dirname + '/public'));
 
 app.get('/api/book',function(req,res){
 	var books = [
-		{title:'Angular',price: 800},
-		{title:'Node.js',price: 600},
-		{title:'CSS',price: 500}
+		{title:'Angular',price: 800 , amount: 5},
+		{title:'Node.js',price: 600 , amount: 3},
+		{title:'CSS',price: 500 , amount: 7}
 	];
 	res.send(books);
 })
