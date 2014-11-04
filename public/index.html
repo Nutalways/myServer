@@ -9,13 +9,13 @@
 <body ng-controller = "mainCtrl">
 	<table class="table table-bordered">
 		<thead>
-			<th>Title</th>
-			<th>Price</th>
+			<th class="warning">Title</th>
+			<th class="warning">Price</th>
 		</thead>
 		<tbody>
 			<tr ng-repeat="book in books">
-				<td>{{book.title}}</td>
-				<td>{{book.price | currency:'B'}}</td>
+				<td class="active">{{book.title}}</td>
+				<td class="success">{{book.price | currency:'B'}}</td>
 			</tr>
 		</tbody>
 	</table>
