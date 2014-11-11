@@ -1,6 +1,7 @@
 angular.module("myApp",[])
 .controller('mainCtrl',function($scope , $http){
 	$scope.books = [];
+<<<<<<< HEAD
 	$scope.bookInstance ={};
 
 	$http.get('/api/book').success(function(data){
@@ -14,4 +15,9 @@ angular.module("myApp",[])
 	    	$scope.bookInstance = {};
 	  	});
 	}
+=======
+	$http.get('/api/book').success(function(data){
+		$scope.books = data;
+	})
+>>>>>>> 265356c628495119c937d4ed8ac7ca4834eca5c6
 })
