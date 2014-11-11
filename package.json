@@ -9,6 +9,8 @@
   "author": "Thanatcha Sae-ao",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.10.1"
+    "body-parser": "^1.9.2",
+    "express": "^4.10.1",
+    "mongojs": "^0.17.0"
   }
 }
